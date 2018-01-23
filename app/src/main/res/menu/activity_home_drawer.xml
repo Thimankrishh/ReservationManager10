@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_booking"
+            android:icon="@drawable/booking1"
+            android:title="Bookings" />
+        <item
+            android:id="@+id/nav_rooms"
+            android:icon="@drawable/roomkey"
+            android:title="Available Rooms" />
+        <item
+            android:id="@+id/nav_RoomDe"
+            android:icon="@drawable/hotel"
+            android:title="Room Details" />
+        <item
+            android:id="@+id/nav_promo"
+            android:icon="@drawable/promo"
+            android:title="Promotions" />
+
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/barchart"
+            android:title="Reports" />
+
+        <item
+            android:id="@+id/nav_currency"
+            android:icon="@drawable/currencies"
+            android:title="Currency" />
+    </group>
+
+    <item android:title="Communication"
+
+
+        >
+        <menu>
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/controls"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_language"
+                android:icon="@drawable/translator1"
+                android:title="Language" />
+
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/send"
+                android:title="Send" />
+
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about_us"
+                android:title="About" />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/support"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share1"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout1"
+                android:title="Log Out" />
+
+        </menu>
+    </item>
+
+
+
+</menu>

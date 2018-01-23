@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/home1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thiman.android.reservationmanager10.Home"
+    tools:showIn="@layout/app_bar_home">
+
+
+
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:background="@color/White"
+        android:touchscreenBlocksFocus="true"
+        >
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/chkin"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Check In"
+                android:fontFamily="@font/chewy_regular"
+                android:textSize="30sp"
+                android:textColor="@color/Black"
+
+
+                />
+            <info.hoang8f.widget.FButton
+                android:id="@+id/buttonci"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20sp"
+                android:text="CheckIn"
+                android:background="@color/colorPrimary"
+                android:textSize="15sp"
+                android:onClick="chkIn"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/l1"
+            >
+
+            <TextView
+                android:id="@+id/chkout"
+                android:textSize="30sp"
+                android:hint="Check Out"
+
+                android:fontFamily="@font/chewy_regular"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textColor="@color/Black"
+                android:layout_toRightOf="@+id/chkin"
+                android:layout_marginLeft="10dp"
+
+                />
+
+
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/buttonco"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/chkout"
+                android:layout_alignStart="@+id/chkout"
+                android:layout_below="@+id/chkout"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="30sp"
+                android:text="CheckOut"
+                android:onClick="chkout"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:background="@color/White"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="Rooms"
+                android:fontFamily="@font/chewy_regular"
+                android:textSize="20sp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+
+                />
+
+            <NumberPicker
+                android:id="@+id/np1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:solidColor="@color/colorPrimary"
+                android:pointerIcon="arrow"
+
+                >
+
+
+            </NumberPicker>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="Room Type"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/Black"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="Adults"
+                android:textSize="20sp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:fontFamily="@font/chewy_regular"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+
+                />
+
+            <NumberPicker
+                android:id="@+id/np2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:solidColor="@color/colorPrimary"
+                android:pointerIcon="arrow"
+
+                />
+            <CheckBox
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="Luxury"
+                android:fontFamily="@font/chewy_regular"
+                android:textStyle="italic"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/Black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="Children"
+                android:fontFamily="@font/chewy_regular"
+                android:textSize="20sp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+
+                />
+            <!--<TextView-->
+            <!--android:id="@+id/childs"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:text="1"-->
+            <!--android:fontFamily="@font/chewy_regular"-->
+            <!--android:textStyle="italic"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--/>-->
+
+            <NumberPicker
+                android:id="@+id/np3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:solidColor="@color/colorPrimary"
+                android:pointerIcon="arrow"
+
+                />
+
+            <CheckBox
+                android:layout_width="85dp"
+                android:layout_height="20dp"
+                android:text="Medium"
+                android:fontFamily="@font/chewy_regular"
+                android:textStyle="italic"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/Black"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            />
+        <info.hoang8f.widget.FButton
+            android:id="@+id/search1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="40dp"
+            android:text="Search"
+            android:fontFamily="@font/chewy_regular"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
