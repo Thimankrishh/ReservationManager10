@@ -48,13 +48,15 @@ public class MainActivity extends AppCompatActivity {
                 mDialog.setMessage("Please Waiting");
                 mDialog.show();
 
-//                Intent homeIntent = new Intent(MainActivity.this,Home.class);
-//                //    Common.currentUser= user;
+                Intent homeIntent = new Intent(MainActivity.this,Home.class);
+                //    Common.currentUser= user;
 //                homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
-//                startActivity(homeIntent);
-//                finish();
+                startActivity(homeIntent);
+                finish();
             }
         });
+
+
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,4 +65,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+//    public void login(){
+//
+////        Intent homeIntent = new Intent(MainActivity.this,Home.class);
+//////                //    Common.currentUser= user;
+////              homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
+////                startActivity(homeIntent);
+////                finish();
+//
+//
+//    }
 }
