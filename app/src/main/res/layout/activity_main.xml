@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thiman.android.reservationmanager10.MainActivity"
+    android:background="@color/Black"
+
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:background="@color/White"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border3"
+
+            >
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edt_phn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="phone"
+                android:minLines="10"
+                android:text="0714245548"
+                android:textColor="@color/White"
+                app:met_textColorHint="@color/colorPrimary"
+
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp"
+        android:background="@color/White"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border3"
+
+            >
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edt_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Hotel123"
+                app:met_textColorHint="@color/colorPrimary"
+                android:textColor="@color/White"
+                android:inputType="textPassword"
+
+
+
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lolgn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+
+
+        >
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:fontFamily="@font/chewy_regular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff" />
+        <!--app:shadowColor="@color/White"-->
+        <!--app:cornerRadius="4dp"-->
+        <!--app:shadowEnabled="true"-->
+        <!--app:shadowHeight="5dp"-->
+
+
+        >
+        <Button
+            android:id="@+id/link_to_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_a_member_sign_up_now"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/chewy_regular"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:background="@color/Black"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="20dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
