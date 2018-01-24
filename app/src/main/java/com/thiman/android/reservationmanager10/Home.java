@@ -123,7 +123,11 @@ public class Home extends AppCompatActivity
 
         switch (id) {
             case R.id.nav_booking:
-
+                Intent bookingIntent = new Intent(Home.this,Booking.class);
+//                //    Common.currentUser= user;
+//              bookingIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(bookingIntent);
+//              finish();
 
             case R.id.nav_rooms:
 
