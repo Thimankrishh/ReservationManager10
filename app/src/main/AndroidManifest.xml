@@ -35,6 +35,11 @@
             android:parentActivityName=".Home"
             >
 
+        </activity>
+        <activity android:name=".RoomDetails"
+            android:label="Room Details"
+            android:parentActivityName=".Home"
+            >
 
         </activity>
     </application>

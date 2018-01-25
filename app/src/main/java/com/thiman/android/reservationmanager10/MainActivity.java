@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     LinearLayout lolgn;
     Animation fadeIn;
-    Button btnLogin;
-    EditText edtPhnNo, edtPwd;
+    Button btnLogin;    EditText edtPhnNo, edtPwd;
     TextView signIn;
 
     @Override

@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -140,6 +141,13 @@ public class Home extends AppCompatActivity
 //finish();
 
             case R.id.nav_RoomDe:
+                Log.i("Tag :", "rd");
+                Intent roomDetails = new Intent(Home.this,RoomDetails.class);
+//                //    Common.currentUser= user;
+//              availableIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(roomDetails);
+                Log.i("Tag :", "intent RD");
+                break;
 
             case R.id.nav_promo:
 
