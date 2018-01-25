@@ -21,7 +21,7 @@ public class Booking extends AppCompatActivity {
     RecyclerView roomRecycler;
     ViewPager viewPagerBooking;
     RecyclerView.LayoutManager roomLayoutManager;
-    RecyclerView.Adapter roomAdapter;
+    MainAdapter roomAdapter;
     PagerAdapter pagerAdapterBooking;
 
     @Override
@@ -43,15 +43,13 @@ public class Booking extends AppCompatActivity {
         roomId = new ArrayList<>();
         checkinDate = new ArrayList<>();
         checkoutDate = new ArrayList<>();
-        roomId.add("2");
-        roomId.add("2");
-        roomId.add("2");
-        checkinDate.add("01.20");
-        checkinDate.add("01.20");
-        checkinDate.add("01.20");
-        checkoutDate.add("01.26");
-        checkoutDate.add("01.22");
-        checkoutDate.add("01.24");
+
+        for(int i = 0; i<=10;i++) {
+            roomId.add("i"+i);
+            checkinDate.add("01.22");
+            checkoutDate.add("01.26");
+
+        }
         roomRecycler.setHasFixedSize(true);
         roomLayoutManager = new LinearLayoutManager(this);
         roomAdapter = new MainAdapter(roomId,checkinDate,checkoutDate);

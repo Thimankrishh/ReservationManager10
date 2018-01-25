@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 final ProgressDialog mDialog = new ProgressDialog(MainActivity.this);
                 mDialog.setMessage("Please Waiting");
-                mDialog.show();
+//                mDialog.show();
 
                 Intent homeIntent = new Intent(MainActivity.this,Home.class);
                 //    Common.currentUser= user;

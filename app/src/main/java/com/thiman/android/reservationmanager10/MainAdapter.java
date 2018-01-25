@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Created by Asus on 1/24/2018.
  */
 
-class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
+public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         ArrayList<String> roomId;
         ArrayList<String> checkinDate;
         ArrayList<String> checkoutDate;
@@ -28,7 +28,7 @@ class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     @Override
     public MainAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.bookingroom_card_item,parent,false);
         return new ViewHolder(view);
     }
 
@@ -58,9 +58,9 @@ class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         public ViewHolder(View itemView) {
             super(itemView);
 
-            roomNoId = (TextView)  itemView.findViewById(R.id.tv_text);
-            checkIn = (TextView) itemView.findViewById(R.id.tv_text1);
-            checkout = (TextView) itemView.findViewById(R.id.tv_text2);
+            roomNoId = (TextView)  itemView.findViewById(R.id.tv_text_rn);
+            checkIn = (TextView) itemView.findViewById(R.id.tv_ci_date);
+            checkout = (TextView) itemView.findViewById(R.id.tv_co_date);
         }
     }
 }

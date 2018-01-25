@@ -127,9 +127,17 @@ public class Home extends AppCompatActivity
 //                //    Common.currentUser= user;
 //              bookingIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(bookingIntent);
+                break;
 //              finish();
 
             case R.id.nav_rooms:
+
+                Intent availableIntent = new Intent(Home.this,AvailableRooms.class);
+//                //    Common.currentUser= user;
+//              availableIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(availableIntent);
+                break;
+//finish();
 
             case R.id.nav_RoomDe:
 
