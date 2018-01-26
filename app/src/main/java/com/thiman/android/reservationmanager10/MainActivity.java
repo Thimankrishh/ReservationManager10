@@ -17,7 +17,7 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout lolgn;
+    LinearLayout lolgn,home;
     Animation fadeIn;
     Button btnLogin;    EditText edtPhnNo, edtPwd;
     TextView signIn;

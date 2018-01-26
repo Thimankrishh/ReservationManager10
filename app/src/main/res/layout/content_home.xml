@@ -17,11 +17,22 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+
         android:orientation="horizontal"
         android:background="@color/White"
+
         android:touchscreenBlocksFocus="true"
         >
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Black"
+            >
+
         <LinearLayout
             android:id="@+id/l1"
             android:layout_width="150dp"
@@ -55,6 +66,15 @@
                 />
 
         </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="180dp"
+            android:background="@color/Black"
+
+            >
 
         <LinearLayout
             android:layout_width="150dp"
@@ -94,17 +114,27 @@
                 android:textSize="15sp" />
         </LinearLayout>
 
+        </android.support.v7.widget.CardView>
+
+
     </RelativeLayout>
+
+
 
     <LinearLayout
         android:id="@+id/ll2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:orientation="horizontal"
+        android:onClick="select"
         android:background="@color/White"
         >
+
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -120,36 +150,44 @@
                 android:textSize="20sp"
                 android:textColor="@color/Black"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="25dp"
 
                 />
+            <!--<TextView-->
+            <!--android:id="@+id/rooms"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="35dp"-->
+            <!--android:text="1"-->
+            <!--android:fontFamily="@font/chewy_regular"-->
+            <!--android:textStyle="italic"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textColor="@color/colorPrimary"-->
 
-            <NumberPicker
-                android:id="@+id/np1"
+            <!--/>-->
+
+            <TextView
+                android:id="@+id/room"
                 android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_height="25dp"
+                android:hint="1"
+                android:textAlignment="center"
                 android:layout_marginLeft="30dp"
                 android:solidColor="@color/colorPrimary"
                 android:pointerIcon="arrow"
+                android:onClick="roomPick"
 
                 >
 
 
-            </NumberPicker>
+            </TextView>
 
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="20dp"
-                android:text="Room Type"
-                android:textStyle="bold"
-                android:layout_marginTop="15dp"
-                android:textColor="@color/Black"
 
-                />
 
         </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="0dp"
@@ -166,32 +204,38 @@
                 android:textColor="@color/Black"
                 android:textStyle="bold"
                 android:fontFamily="@font/chewy_regular"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="25dp"
 
                 />
+            <!--<TextView-->
+            <!--android:id="@+id/adults"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:text="2"-->
+            <!--android:fontFamily="@font/chewy_regular"-->
+            <!--android:textStyle="italic"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--/>-->
 
-            <NumberPicker
-                android:id="@+id/np2"
+            <TextView
+                android:id="@+id/adult"
                 android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_height="25dp"
+                android:hint="2"
+                android:textAlignment="center"
                 android:layout_marginLeft="30dp"
                 android:solidColor="@color/colorPrimary"
                 android:pointerIcon="arrow"
 
                 />
-            <CheckBox
-                android:layout_width="80dp"
-                android:layout_height="20dp"
-                android:text="Luxury"
-                android:fontFamily="@font/chewy_regular"
-                android:textStyle="italic"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/Black"
-                />
+
 
         </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="0dp"
@@ -208,7 +252,7 @@
                 android:textSize="20sp"
                 android:textColor="@color/Black"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
 
                 />
@@ -224,55 +268,224 @@
             <!--android:textColor="@color/colorPrimary"-->
             <!--/>-->
 
-            <NumberPicker
-                android:id="@+id/np3"
+            <TextView
+                android:id="@+id/child"
                 android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_height="25dp"
+                android:hint="1"
+                android:textAlignment="center"
                 android:layout_marginLeft="25dp"
                 android:solidColor="@color/colorPrimary"
                 android:pointerIcon="arrow"
 
                 />
 
-            <CheckBox
-                android:layout_width="85dp"
-                android:layout_height="20dp"
-                android:text="Medium"
-                android:fontFamily="@font/chewy_regular"
-                android:textStyle="italic"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
-                android:textColor="@color/Black"
-                />
+
 
         </LinearLayout>
 
+
     </LinearLayout>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_margin="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/rt"
+        android:text="Room Type"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Single"
+            />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Double"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="DoubleD"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="             " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Cabana " />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Twin" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Parlor" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="70dp"
         android:orientation="horizontal"
         >
 
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:layout_marginRight="20dp"
-            />
-        <info.hoang8f.widget.FButton
-            android:id="@+id/search1"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginRight="40dp"
-            android:text="Search"
-            android:fontFamily="@font/chewy_regular"
-            />
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/pt"
+                    android:text="Package     "
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Single"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Double"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="DoubleD"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"/>
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--<info.hoang8f.widget.FButton-->
+            <!--android:id="@+id/search1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginRight="40dp"-->
+            <!--android:text="Search"-->
+            <!--android:fontFamily="@font/chewy_regular"-->
+            <!--/>-->
 
     </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/search1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:text="Search"
+        android:fontFamily="@font/chewy_regular"
+        />
 
 </LinearLayout>
 

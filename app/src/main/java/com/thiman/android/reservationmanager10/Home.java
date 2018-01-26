@@ -1,5 +1,6 @@
 package com.thiman.android.reservationmanager10;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.net.Uri;
@@ -193,6 +194,20 @@ public class Home extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void select(View view){
+        AlertDialog.Builder builder = new AlertDialog.Builder(Home.this,AlertDialog.THEME_HOLO_DARK);
+        View selectView = getLayoutInflater().inflate(R.layout.select,null);
+
+        builder.setView(selectView);
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+
+
+
+    }
+
 }
 
 
