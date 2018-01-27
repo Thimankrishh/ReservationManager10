@@ -23,22 +23,28 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     Button checkIn;
     Button checkOut;
-    Button search;
+    Button search,rincre,rdecre,aincre,adecre,cincre,cdecre;
+    ElegantNumberButton elegantBtnroom,elegantBtnadult,elegantBtnchild;
     DatePickerDialog picker;
-    TextView tvci;
-    TextView tvco;
+    TextView tvci,tvco,noroom,noadult,nochild,noroom1,noadult1,nochild1;
+    int room = 1,adult = 1,child = 1;
+
     Animation fadeIn;
     RelativeLayout rl1;
     LinearLayout ll2;
     private DrawerLayout drawer;
     private ActionBarDrawerToggle toggle;
     private Toolbar mToolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -195,19 +201,54 @@ public class Home extends AppCompatActivity
         return true;
     }
 
-    public void select(View view){
-        AlertDialog.Builder builder = new AlertDialog.Builder(Home.this,AlertDialog.THEME_HOLO_DARK);
-        View selectView = getLayoutInflater().inflate(R.layout.select,null);
-
-        builder.setView(selectView);
-        AlertDialog dialog = builder.create();
-        dialog.show();
+//    public void select(View view){
+//        AlertDialog.Builder builder = new AlertDialog.Builder(Home.this,AlertDialog.THEME_HOLO_DARK);
+//        View selectView = getLayoutInflater().inflate(R.layout.select,null);
+//
+//        noroom = (TextView)findViewById(R.id.room);
+//        noadult = (TextView)findViewById(R.id.adult);
+//        nochild = (TextView)findViewById(R.id.child);
+//
+//        //final Intent roomitent=new Intent(getApplicationContext(),Home.class);
+//
+//           elegantBtnroom = (ElegantNumberButton)findViewById(R.id.numOfrooms);
+//        elegantBtnroom.setOnClickListener(new ElegantNumberButton.OnClickListener() {
+//                                             @Override
+//                                            public void onClick(View view) {
+//                                                  room = Integer.parseInt(elegantBtnroom.getNumber());
+//                                                // Toast.makeText(getApplicationContext(),"hello",Toast.LENGTH_LONG).show();
+//////
+//////        rincre = (Button)findViewById(R.id.increr) ;
+//////        rdecre = (Button)findViewById(R.id.decrer) ;
+//////        aincre = (Button)findViewById(R.id.increa);
+//////        adecre = (Button)findViewById(R.id.decrea);
+//////        cincre = (Button)findViewById(R.id.increc);
+//////        cdecre = (Button)findViewById(R.id.decrec);
+////
+//                                             }
+////
+//       }) ;
+//
+//
+//
+//
+//
+//                builder.setView(selectView);
+//        AlertDialog dialog = builder.create();
+//        dialog.show();
+//
+//
+//
 
 
 
 
     }
 
-}
+
+
+
+
+
 
 
